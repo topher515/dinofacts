@@ -131,7 +131,7 @@ def dinofacts():
             sender.add(frm,"Unable to find fact. Did not send anything.") 
             return str(sender)
         else:
-            sender.add(data['nums'], ' '.join(tokens[1:]))
+            sender.add_fact(data['nums'], ' '.join(tokens[1:]))
             sender.add(frm,"Your fact was sent to %s numbers" % len(data['nums']))
             return str(sender)
     
